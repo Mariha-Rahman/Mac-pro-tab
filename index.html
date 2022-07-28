@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAC PRO TAB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- css styles -->
+    <style>
+        #text-justify {
+            text-align: justify;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="container p-5 m-auto">
+            <div class="row g-0">
+                <div class="col">
+                    <div class=" border-0">
+                        <img class="w-100 p-3" src="images/mac.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-2 border-0">
+                        <h1>Customize your Blue 24-inc iMac with Apple M1 chip</h1>
+                        <p id="text-justify">
+                            The iMac Pro's chassis is carried over from the 27-inch iMac introduced in 2012 but is only
+                            available in a darker "space gray" finish. Unlike the white accessories that come with the
+                            iMac, the iMac Pro came with a black Magic Keyboard with a numeric keypad, and a black Magic
+                            Mouse or Magic Trackpad.
+                        </p>
+                        <div class="mb-4">
+                            <p class="m-0 p-0 fw-bold">Memory</p>
+                            <button id="8gb" type="button" class="btn btn-outline-dark">8GB unified memory</button>
+                            <button id="16gb-memory" type="button" class="btn btn-outline-dark">16GB unified
+                                memory</button>
+                        </div>
+                        <div class="mb-4">
+                            <p class="m-0 p-0 fw-bold">Storage</p>
+                            <button id="256gb" type="button" class="btn btn-outline-dark">256GB SSD Storage</button>
+                            <button id="512gb-ssd" type="button" class="btn btn-outline-dark">512GB SSD storage</button>
+                            <button id="1tb-ssd" type="button" class="btn btn-outline-dark">1TB SSD
+                                storage</button>
+                        </div>
+                        <div class="mb-4">
+                            <p class="m-0 p-0 fw-bold">Choose your delivery option</p>
+                            <button id="0-crg" type="button" class="btn btn-outline-dark mb-2">Friday, May 27 FREE Prime
+                                Delivery</button>
+                            <button id="20-crg" type="button" class="btn btn-outline-dark mb-2">Friday, May 20 Delivery
+                                Charge
+                                $20</button>
+                        </div>
+                        <!-- table divv -->
+                        <table class="table mt-4">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Best Price</th>
+                                    <th scope="col">$1299</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Extra Memory Cost</th>
+                                    <td class="fw-bold">$ <span id="memory-extra">0</span></td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Extra Storage Cost</th>
+                                    <td class="fw-bold">$ <span id="storage-extra">0</span></td>
+
+                                </tr>
+                                <tr class="border-top border-dark">
+                                    <th scope="row">Delivery Charge</th>
+                                    <td colspan="2" class="fw-bold">$ <span id="charge-extra">0</span></td>
+
+                                </tr>
+                                <tr>
+                                    <th class="border-bottom-0" scope="row">Total Price</th>
+                                    <td colspan="2" class="fw-bold border-bottom-0">$ <span id="total">1299</span></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="mb-1">Add promo code</p>
+                        <div class="input-group mb-3">
+                            <input id="input-field" type="text" class="form-control" aria-label="Recipient's username"
+                                aria-describedby="button-addon2">
+                            <button id="apply-btn" class=" btn btn-success" type="button"
+                                id="button-addon2">Apply</button>
+
+
+                        </div>
+                        <div>
+                            <p style="display: none;" id="notify-fail" class="fw-bold fs-3 text-danger">❌ Discount code
+                                Didn't Match,
+                                Please try again</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h1 class="m-auto text-center">
+                    Total:$ <span id="final-price">1299</span>
+                </h1>
+
+            </div>
+
+        </div>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
